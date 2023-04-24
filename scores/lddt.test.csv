@@ -1,0 +1,7 @@
+reference,model,lddt
+rna_only_r1107_processed.pdb,R1107TS035_1_processed.pdb,0.34277000277521336
+rna_only_r1107_processed.pdb,R1107TS029_1_processed.pdb,0.4246147267547561
+rna_only_r1107_processed.pdb,R1107TS029_2_processed.pdb,0.4464242225154761
+ref_2_processed.pdb,R1107TS029_1_processed.pdb,0.4246147267547561
+ref_2_processed.pdb,R1107TS029_2_processed.pdb,0.4464242225154761
+ref_2_processed.pdb,R1107TS035_1_processed.pdb,0.34277000277521336

@@ -1,0 +1,7 @@
+reference,model,inf_all,inf_stack,inf_WC,inf_nWC,sns_WC,ppv_WC,sns_nWC,ppv_nWC
+ref_2_processed.pdb,R1107TS029_1_processed.pdb,0.57,0.57,0.67,0.25,0.45,1.0,0.25,0.25
+ref_2_processed.pdb,R1107TS029_2_processed.pdb,0.64,0.6,0.84,0.25,0.7,1.0,0.25,0.25
+ref_2_processed.pdb,R1107TS035_1_processed.pdb,0.46,0.57,0.26,0.0,0.25,0.26,0.0,0.0
+rna_only_r1107_processed.pdb,R1107TS029_1_processed.pdb,0.57,0.57,0.67,0.25,0.45,1.0,0.25,0.25
+rna_only_r1107_processed.pdb,R1107TS029_2_processed.pdb,0.64,0.6,0.84,0.25,0.7,1.0,0.25,0.25
+rna_only_r1107_processed.pdb,R1107TS035_1_processed.pdb,0.46,0.57,0.26,0.0,0.25,0.26,0.0,0.0

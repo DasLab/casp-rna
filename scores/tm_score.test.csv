@@ -1,0 +1,9 @@
+model,reference,tm_score
+R1107TS029_1_processed.pdb,rna_only_r1107_processed.pdb,0.2762
+R1107TS029_2_processed.pdb,rna_only_r1107_processed.pdb,0.2801
+R1107TS035_1_processed.pdb,rna_only_r1107_processed.pdb,0.2326
+rna_only_r1107_processed.pdb,rna_only_r1107_processed.pdb,1.0
+R1107TS029_1_processed.pdb,ref_2_processed.pdb,0.2762
+R1107TS029_2_processed.pdb,ref_2_processed.pdb,0.2801
+R1107TS035_1_processed.pdb,ref_2_processed.pdb,0.2326
+ref_2_processed.pdb,ref_2_processed.pdb,1.0

@@ -1,0 +1,4 @@
+36c36
+< $bin='';
+---
+> $bin=SED_BIN_PATH;

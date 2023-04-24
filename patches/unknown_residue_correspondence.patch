@@ -1,0 +1,72 @@
+5c5
+< # Usage: ./run_GDT_for_structures_with_unknown_residue_residue_correspondences.sh  pdb1  pdb2  [ OUT ] 
+---
+> # Usage: ./run_GDT_for_structures_with_unknown_residue_residue_correspondences.sh  pdb1  pdb2  OUT  
+7,8d6
+< # Output OUT: 0 - no coordinates, 1 - rotated first structure, 2 - two aligned structures
+< #
+10,12c8,12
+< if [ -z "$3" ]; then
+<   OUT=0
+< else
+---
+> bin=SED_BIN_PATH
+> 
+> # Output OUT: 0 - no coordinates, 1 - rotated first structure, 2 - two aligned structures
+> OUT=0
+> if [ $3 -gt 0 ]; then
+13a14,15
+> else
+>   OUT=0
+16,17c18
+< mol1=`echo $1 | rev | cut -f1 -d'/' | rev`
+< mol2=`echo $2 | rev | cut -f1 -d'/' | rev`
+---
+> mol2process=GDT.$1\.$2
+19c20,21
+< molsprocess=GDT.$mol1\.$mol2
+---
+> $bin/collect_PDB.pl $1 > MOL2/$mol2process
+> $bin/collect_PDB.pl $2 >> MOL2/$mol2process
+21,23d22
+< bin/collect_PDB.pl $1 > MOL2/$molsprocess
+< bin/collect_PDB.pl $2 >> MOL2/$molsprocess
+< 
+25c24,25
+< bin/lga -4 -d:5.0 -o0 -gdc -lga_m -stral $molsprocess > RESULTS/$molsprocess.res
+---
+> #lga -4 -d:5.0 -o0 -gdc -lga_m -stral $mol2process > RESULTS/$mol2process.res
+> $bin/lga -4 -d:4.0 -o0 -atom:C4, -lga_m -stral $mol2process > RESULTS/$mol2process.res
+28,30c28,30
+< grep "^LGA " RESULTS/$molsprocess.res >> MOL2/$molsprocess
+< # Use calculated residue-residue correspondences in GDT evaluation
+< bin/lga -3 -sia -d:5.0 -o$OUT -al $molsprocess > RESULTS/$molsprocess.gdt_res
+---
+> grep "^LGA " RESULTS/$mol2process.res >> MOL2/$mol2process
+> #lga -3 -sia -d:5.0 -o$OUT -al $mol2process > RESULTS/$mol2process.gdt_res
+> $bin/lga -3 -sia -d:5.0 -atom:C4, -o$OUT -al $mol2process > RESULTS/$mol2process.gdt_res
+33,36c33,35
+< NB12=`grep "^SUMMARY(LGA)" RESULTS/$molsprocess.res | perl -ane '@L=split(/[\ ]+/,$_); printf "%s:%s",$L[1],$L[2]'`
+< NB2=`echo $NB12 | cut -f2 -d':'`
+< NB=`grep "^SUMMARY(GDT)" RESULTS/$molsprocess.gdt_res | perl -ane '@L=split(/[\ ]+/,$_); printf "%s",$L[2]'`
+< GDT=`cat RESULTS/$molsprocess.gdt_res | grep "GDT PERCENT_AT" | perl -ane '@LINE=(@F);$V1=($LINE[2]+$LINE[3]+$LINE[5]+$LINE[9])/4.0;$V2=($LINE[3]+$LINE[5]+$LINE[9]+$LINE[17])/4.0;printf "%6.2f:%6.2f",$V1,$V2;'`
+---
+> NB12=`grep "^SUMMARY(LGA)" RESULTS/$mol2process.res | perl -ane '@L=split(/[\ ]+/,$_); printf "%s:%s",$L[1],$L[2]'`
+> NB=`grep "^SUMMARY(GDT)" RESULTS/$mol2process.gdt_res | perl -ane '@L=split(/[\ ]+/,$_); printf "%s",$L[2]'`
+> GDT=`cat RESULTS/$mol2process.gdt_res | grep "GDT PERCENT_AT" | perl -ane '@LINE=(@F);$V1=($LINE[2]+$LINE[3]+$LINE[5]+$LINE[9])/4.0;$V2=($LINE[3]+$LINE[5]+$LINE[9]+$LINE[17])/4.0;printf "%6.2f:%6.2f",$V1,$V2;'`
+39,46c38,39
+< cat RESULTS/$molsprocess.res | grep -v "# END of job"
+< cat RESULTS/$molsprocess.gdt_res | grep -v "#     " | grep -v "LGA    " | grep -v "ROTATION" | grep -v "_new =" | grep -v "DEG: " | grep -v "# END of job"
+< 
+< echo "#######################################################"
+< echo "#######################################################"
+< echo ""
+< echo "# Values of GDT_HA and GDT_TS from residue-residue correspondences established by LGA sequence independent analysis"
+< echo "# GDT_HA and GDT_TS values below are normalized according to the size ($NB2) of the reference (target) structure:"
+---
+> cat RESULTS/$mol2process.res | grep -v "# END of job"
+> echo "# Values of GDT_HA and GDT_TS from residue-residue correspondences established by LGA sequence independent analysis:"
+51c44
+<   grep -v "^LGA " TMP/$molsprocess.pdb | egrep -v -e "REMARK   GDT and LCS analysis" -e "REMARK   FIXED Atom-Atom correspondence" -e "REMARK   LGA parameters:" -e "REMARK   #CA        N1   N2" -e "REMARK   SUMMARY:" > Superimposed.$molsprocess.pdb
+---
+>   grep -v "^LGA " TMP/$mol2process.pdb | egrep -v -e "REMARK   GDT and LCS analysis" -e "REMARK   FIXED Atom-Atom correspondence" -e "REMARK   LGA parameters:" -e "REMARK   #CA        N1   N2" -e "REMARK   SUMMARY:" > Superimposed.$mol2process.pdb

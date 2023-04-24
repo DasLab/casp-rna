@@ -1,0 +1,43 @@
+groups,group_name,h0/s12,lastname,firstname,institution,country,Zrna,ranking,Server,Secondary structure: Literature,Secondary structure: prediction package,Secondary structure: Deep learning,Structure generation: MSA,Structure generation: Template,Structure generation: Fragment assembly,Structure generation: Deep learning,Structure generation: Molecular dynamics,Structure selection: Statistics-derived energy function,Structure selection: Deep learning,Structure selection: Clustering,Structure selection: Molecular dynamics force field,Structure refinement,single nucleotide sampling ( yes / no ),multiple methods to generate separate groups of structures( y / n ),notes
+232,AIchemy_RNA2,0,XIONG,PENG,ZELIXIR,CHINA,21.8316397807735,1,False,True,True,False,False,True,True,False,False,True,False,False,False,False,False,False,
+287,Chen,0,CHEN,SHI-JIE,UNIVERSITY OF MISSOURI,USA,17.5449743553791,2,False,False,True,False,False,True,True,False,True,False,False,True,True,True,False,True,
+81,RNApolis,0,SZACHNIUK,MARTA,"INSTITUTE OF COMPUTING SCIENCE, POZNAN UNIVERSITY OF TECHNOLOGY",POLAND,12.7929987119051,3,False,True,True,False,False,True,True,False,False,True,False,False,False,True,False,False,
+128,GeneSilico,0,BUJNICKI,JANUSZ,"LABORATORY OF BIOINFORMATICS AND PROTEIN ENGINEERING, INTERNATIONAL INSTITUTE OF MOLECULAR AND CELL BIOLOGY IN WARSAW",POLAND,11.8308221460256,4,False,False,True,False,False,True,True,False,False,False,False,False,False,False,False,False,
+416,AIchemy_RNA,0,LI,YU,CUHK,CHINA,8.29569013802704,5,False,False,False,False,True,False,False,True,False,False,False,False,False,False,False,False,
+54,UltraFold,0,YE,QIWEI,BEIJING ACADEMY OF ARTIFICIAL INTELLIGENCE,CHINA,7.40987855308414,6,False,True,True,False,True,True,True,True,False,True,True,False,False,False,False,False,
+119,Kiharalab,0,KIHARA,DAISUKE,PURDUE UNIVERSITY,USA,7.1271441751931,7,False,True,True,False,False,True,True,False,False,True,True,False,False,True,False,False,
+229,Yang-Server,1,YANG,JIANYI,NANKAI UNIVERSITY,CHINA,6.04160871353534,8,True,False,False,False,True,False,False,True,False,False,False,False,False,True,False,False,
+125,UltraFold_Server,1,YE,QIWEI,BEIJING ACADEMY OF ARTIFICIAL INTELLIGENCE,CHINA,6.01108685458524,9,True,False,True,False,True,True,True,True,False,True,True,False,False,False,False,False,a little unclear as do not report server
+76,Rookie,0,WEI,SEN,NONE,CHINA,5.57536296492871,10,False,False,True,False,False,False,True,False,False,False,True,False,False,False,False,False,
+147,SHT,0,BAI,FANG,SHANGHAITECH UNIVERSITY,CHINA,5.23493570687024,11,False,False,True,False,False,True,True,False,False,False,True,False,False,True,False,False,
+35,Manifold-E,2,LIU,XUYANG,SHANGHAITECH UNIVERSITY,CHINA,5.21638787675303,12,True,False,True,False,False,False,False,False,True,True,False,False,False,True,False,False,
+110,DF_RNA,0,PEARCE,ROBIN,UNIVERSITY OF MICHIGAN,USA,4.99024975817684,13,False,False,True,False,True,False,False,True,False,False,False,False,False,True,False,False,
+439,Yang,0,YANG,JIANYI,NANKAI UNIVERSITY,CHINA,4.93019773307115,14,False,False,False,False,True,False,False,True,False,False,False,False,False,True,False,False,
+239,Yang-Multimer,2,YANG,JIANYI,NANKAI UNIVERSITY,CHINA,4.88919226166083,15,False,False,False,False,False,False,False,True,False,False,False,False,False,True,False,False,
+248,Manifold,0,LIU,XUYANG,SHANGHAITECH UNIVERSITY,CHINA,4.75895057999723,16,False,False,True,False,False,False,False,False,True,True,False,False,False,True,False,False,
+227,GinobiFold,0,SUN,ZHIGANG,SHANGHAITECH UNIVERSITY,CHINA,4.45800660428092,17,False,,,,,,,,,,,,,,,,only described protein
+470,CoMMiT-human,0,ZHANG,CHENGXIN,UNIVERSITY OF MICHIGAN,USA,4.20923802360731,18,False,False,True,False,False,True,False,True,False,False,False,True,False,False,False,,
+392,LCBio,0,KMIECIK,SEBASTIAN,UNIVERSITY OF WARSAW,POLAND,3.97053570050198,19,False,True,True,False,True,False,True,True,True,True,True,False,False,True,False,True,
+489,CoMMiT-server,1,ZHANG,CHENGXIN,UNIVERSITY OF MICHIGAN,USA,3.57858743386766,20,True,False,True,False,False,True,False,True,False,False,False,True,False,False,False,,
+235,SoutheRNA,0,PUCCI,FABRIZIO,UNIVERSIT_ LIBRE DE BRUXELLES,BELGIUM,3.52684518230934,21,False,True,False,False,True,True,False,False,False,False,False,False,False,True,True,True,manual selection
+434,Coqualia,0,PANG,ANQI,"COQUALIA TECHNOLOGY CO., LTD",CHINA,3.48485776610026,22,False,,,,,,,,,,,,,,,,only described protein
+444,CoDock,0,CHANG,SHAN,JIANGSU UNIVERSITY OF TECHNOLOGY,CHINA,3.41901126739712,23,False,,,,,,,,,,,,,,,,only described ligand docking
+325,AIchemy_LIG,0,ZHENG,LIANGZHEN,"TENCENT, CO. LTD",CHINA,2.89253659097123,24,False,,,,,,,,,,,,,,,,only described ligand docking
+347,AIchemy_LIG3,0,JIA,XIAO,SHANDONG UNIVERSITY,CHINA,2.89253659097123,24,False,,,,,,,,,,,,,,,,only described ligand docking
+456,AIchemy_LIG2,0,WANG,ZECHEN,SHANDONG UNIVERSITY,CHINA,2.89253659097123,24,False,,,,,,,,,,,,,,,,no abstract
+238,rDP,0,LI,YANG,UNIVERSITY OF MICHIGAN,USA,2.38538632240656,27,False,False,False,True,False,False,False,True,False,False,False,False,False,False,True,,
+185,BAKER,0,BAEK,MINKYUNG,UNIVERSITY OF WAHINGTON,USA,2.27840863022977,28,False,False,False,True,True,True,False,True,False,True,False,False,False,False,False,,statistics-derived physics terms in fine-tuning stage
+131,Kiharalab_Server,1,KIHARA,DAISUKE,PURDUE UNIVERSITY,USA,2.17100272950202,29,True,,,,False,False,True,False,False,True,False,False,False,False,False,False,Just ran SimRNA
+494,Venclovas,0,VENCLOVAS,CESLOVAS,"INSTITUTE OF BIOTECHNOLOGY, VILNIUS UNIVERSITY",LITHUANIA,1.94677948992996,30,False,,,,,,,,,,,,,,,,"described RNA/protein only; for RNA used ""CASP server"" - unclear what was used"
+285,PerezLab_Gators,0,PEREZ,ALBERTO,UNIVERSITY OF FLORIDA,USA,1.6566756375592,31,False,False,True,False,False,False,False,False,True,False,False,True,False,False,False,False,
+29,GWxraylab,0,QIU,XIANGYUN,GEORGE WASHINGTON UNIVERSITY,USA,1.2706427577567,32,False,False,False,True,False,True,False,False,True,False,False,False,True,False,False,False,
+472,ddquest,0,YAMAMOTO,KAZUKI,THE UNIVERSITY OF TOKYO,JAPAN,0.911519038980744,33,,,,,,,,,,,,,,,,,described protein modeling only
+257,WL_team,0,ZHANG,WENYI,WESTLAKE UNIVERSITY,CHINA,0.477388656965586,34,,,,,,,,,,,,,,,,,described protein modeling only
+46,Manifold-LC-E,2,LIU,XUYANG,DP TECHNOLOGY,CHINA,0.18943560175756,35,,,,,,,,,,,,,,,,,"missing abstract (MANIFOLD, MANIFOLD-E have abstracts)"
+163,nucE2E,2,WANG,WENKAI,NANKAI UNIVERSITY,CHINA,0.123831892353382,36,,,,,,,,,,,,,,,,,missing abstract
+385,FoldEver-Hybrid,0,HOU,JIE,SAINT LOUIS UNIVERSITY,USA,0.0,37,,,,,,,,,,,,,,,,,missing abstract
+245,FoldEver,1,HOU,JIE,SAINT LOUIS UNIVERSITY,USA,0.0,37,,,,,,,,,,,,,,,,,RNA not described in abstract
+177,Schug_Lab,0,SCHUG,ALEXANDER,FORSCHUNGSZENTRUM JUELICH,GERMANY,0.0,37,False,False,False,False,True,False,True,True,False,True,False,False,False,False,False,False,
+97,Graphen_Medical,0,CHEN,YITING,"GRAPHEN, INC.",TAIWAN,0.0,37,False,False,False,False,False,False,False,True,False,False,False,False,True,False,False,False,
+91,UNRES,0,SIERADZAN,ADAM,UNIWERSYTET GDA&#324;SKI,POLAND,0.0,37,,,,,,,,,,,,,,,,,RNA not described in abstract
+490,Manifold-LC,0,LIU,XUYANG,DP TECHNOLOGY,CHINA,0.0,37,,,,,,,,,,,,,,,,,"missing abstract (MANIFOLD, MANIFOLD-E have abstracts)"

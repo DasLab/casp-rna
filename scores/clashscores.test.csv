@@ -1,0 +1,7 @@
+reference,model,clashscore
+rna_only_r1107_processed.pdb,R1107TS035_1_processed.pdb,1.36
+rna_only_r1107_processed.pdb,R1107TS029_1_processed.pdb,0.45
+rna_only_r1107_processed.pdb,R1107TS029_2_processed.pdb,0.0
+ref_2_processed.pdb,R1107TS029_1_processed.pdb,0.45
+ref_2_processed.pdb,R1107TS029_2_processed.pdb,0.0
+ref_2_processed.pdb,R1107TS035_1_processed.pdb,1.36
