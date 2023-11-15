@@ -25,7 +25,7 @@ The CASP-RNA repository contains all scripts and code used to obtain and analyse
 Clone the repository to your local machine:
 
 ```
-$ git clone https://github.com/philpham8/casp-pipeline.git
+$ git clone https://github.com/DasLab/casp-rna.git
 $ cd casp-rna
 ```
 
@@ -66,7 +66,7 @@ Binary for LGA can be downloaded [here](http://proteinmodel.org/AS2TS/LGA/lga.ht
 
 # Usage
 
-The scripts can be run from the command line, or imported into a python script. The scripts can be run from the command line, or imported into a python script.
+The scripts can be run from the command line, or imported into a python script.
 
 ### Structure of input directory
 Each target directory must contain two subdirectories: `references/` (ground truth models) and `models/` (predicted models). The `references/` and `models/` subdirectories each must contain at least one .pdb file. Different states and configurations can be stored in separate files. The target directory can be placed anywhere on the system, but the path to the target directory must be provided to the script.
